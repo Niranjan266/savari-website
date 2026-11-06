@@ -16,7 +16,6 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Savari – auto-accept for drivers">
 <meta name="twitter:description" content="Good fare? Savari presses Accept for you. Tamil + English.">
-<script>(function(){var l='both';try{var v=localStorage.getItem('savari-lang');if(v==='ta'||v==='en'||v==='both')l=v}catch(e){}var h=document.documentElement;h.setAttribute('data-lang',l);h.lang=l==='en'?'en':'ta'})()</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500;700;800&display=swap" rel="stylesheet">
@@ -256,7 +255,6 @@ html[data-lang=ta] .en,html[data-lang=en] .ta{display:none!important}
 html:not([data-lang=both]) .sep{display:none}
 html[data-lang=en] .en{font-size:1em!important;opacity:1!important;font-weight:800;margin-top:0!important}
 html[data-lang=en] .chip .t .en,html[data-lang=en] .rules .en,html[data-lang=en] .tag .en{font-weight:700}
-.langbar{position:sticky;top:0;z-index:25;background:rgba(255,241,218,.97);border-bottom:3px solid var(--ink);padding:8px 0}
 .lbin{display:flex;align-items:center;gap:12px}
 .lblogo{width:40px;height:40px;flex:none;display:none}
 .seg{display:grid;grid-template-columns:1.5fr 1fr 1fr;flex:1;max-width:520px;margin-left:auto;border:3px solid var(--ink);border-radius:16px;overflow:hidden;background:#fff;box-shadow:3px 3px 0 var(--ink)}
@@ -369,14 +367,6 @@ html[data-lang=en] .chip .t .en,html[data-lang=en] .rules .en,html[data-lang=en]
  </defs>
 </svg>
 
-<div class="langbar"><div class="wrap lbin">
- <svg class="lblogo" viewBox="0 0 100 100" aria-hidden="true"><use href="#logo"/></svg>
- <div class="seg" role="group" aria-label="மொழி / Language">
-  <button type="button" data-l="both" aria-pressed="true">தமிழ் + English</button>
-  <button type="button" data-l="ta" aria-pressed="false">தமிழ்</button>
-  <button type="button" data-l="en" aria-pressed="false">English</button>
- </div>
-</div></div>
 
 <header class="wrap">
  <div class="brand">
@@ -761,14 +751,6 @@ html[data-lang=en] .chip .t .en,html[data-lang=en] .rules .en,html[data-lang=en]
   run++; clear(); log.innerHTML='';
   fareEl.textContent='₹250'; card.classList.add('show'); judge(250); result(250,true); addLog(120,false);
  }
-
- // language toggle
- var segBtns=document.querySelectorAll('.seg button');
- function setLang(l,save){var h=document.documentElement;h.setAttribute('data-lang',l);h.lang=l==='en'?'en':'ta';
-  segBtns.forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-l')===l?'true':'false')});
-  if(save){try{localStorage.setItem('savari-lang',l)}catch(e){}}}
- setLang(document.documentElement.getAttribute('data-lang')||'both',false);
- segBtns.forEach(function(b){b.addEventListener('click',function(){setLang(b.getAttribute('data-l'),true)})});
 
  // download overlay (browser download proceeds normally, no preventDefault)
  var ov=$('ov'),lastFocus=null;
