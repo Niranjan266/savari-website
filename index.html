@@ -224,6 +224,16 @@ header.wrap{padding-top:var(--s4)}
 @media(max-width:419px){.step .num{width:44px;height:44px;font-size:26px}.step svg{width:40px;height:40px}.step{padding:var(--s3);gap:var(--s2)}.step .tx{font-size:18px}}
 .step a{display:inline-block;min-height:44px;margin-top:var(--s2);background:var(--g);color:#fff;border-radius:12px;padding:10px var(--s4);line-height:1.5;text-decoration:none;font-weight:800;font-size:16px}
 
+/* play-protect "app blocked" help */
+.pp{display:grid;gap:var(--s5);align-items:center}
+.pp .steps{grid-template-columns:minmax(0,1fr);margin:0}
+@media(min-width:820px){.pp{grid-template-columns:minmax(0,290px) minmax(0,1fr);gap:var(--s7)}}
+.ppart{display:block;width:100%;max-width:290px;height:auto;margin:0 auto;border:4px solid var(--ink);border-radius:22px;box-shadow:6px 6px 0 var(--ink)}
+.calm{display:flex;gap:var(--s3);align-items:center;margin-top:var(--s5);background:#E3F1E4;border:3px solid var(--g);border-radius:18px;padding:var(--s4);font-size:17px;line-height:1.25}
+.calm>span{min-width:0}
+.calm svg{flex:none;width:46px;height:46px}
+.calm .en{font-size:14px}
+
 /* warn */
 .warn{background:#FFE7DE;border:4px solid var(--red);border-radius:20px;padding:var(--s5);box-shadow:6px 6px 0 var(--red)}
 .warn h2{color:var(--red);display:flex;gap:var(--s3);align-items:center;margin-bottom:var(--s4)}
@@ -702,6 +712,48 @@ html[data-lang=en] .chip .t .en,html[data-lang=en] .rules .en,html[data-lang=en]
   <li class="step"><span class="num">6</span><svg viewBox="0 0 52 52" aria-hidden="true"><rect x="3" y="12" width="46" height="28" rx="10" fill="#fff" stroke="#2B1D12" stroke-width="3"/><text x="26" y="33" text-anchor="middle" font-size="17" font-weight="800" fill="#0B6B3A" font-family="sans-serif">₹200</text></svg><span class="tx"><span class="ta">உங்க தொகையை வைங்க</span><span class="en">Set your amount</span></span></li>
   <li class="step"><span class="num">7</span><svg viewBox="0 0 52 52" aria-hidden="true"><rect x="3" y="14" width="46" height="24" rx="12" fill="#0B6B3A" stroke="#2B1D12" stroke-width="3"/><circle cx="36" cy="26" r="9" fill="#fff" stroke="#2B1D12" stroke-width="2"/><text x="16" y="31" text-anchor="middle" font-size="12" font-weight="800" fill="#fff" font-family="sans-serif">ON</text></svg><span class="tx"><span class="ta">ON பண்ணுங்க. முடிஞ்சது!</span><span class="en">Turn it ON. Done!</span></span></li>
  </ol>
+</section>
+
+<!-- PLAY PROTECT "APP BLOCKED" HELP -->
+<section class="wrap" id="blocked">
+ <h2><span class="ta">"App blocked" வந்தா பயப்படாதீங்க</span><span class="en">If you see "App blocked"</span></h2>
+ <div class="pp">
+  <svg class="ppart" viewBox="0 0 280 300" role="img" aria-label="Android shows an App blocked message with Cancel and Install anyway buttons. Tap Install anyway and Savari installs.">
+   <rect width="280" height="300" rx="18" fill="#FFE7C2"/>
+   <rect y="258" width="280" height="42" fill="#D9B98C"/>
+   <!-- block dialog card -->
+   <rect x="26" y="26" width="228" height="214" rx="18" fill="#FFFBF2" stroke="#2B1D12" stroke-width="4"/>
+   <!-- shield with ! -->
+   <g transform="translate(140,80)">
+    <path d="M0 -34 L28 -22 V2 Q28 30 0 44 Q-28 30 -28 2 V-22Z" fill="#C0432C" stroke="#2B1D12" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M0 -16 V10" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="0" cy="24" r="4" fill="#fff"/>
+   </g>
+   <!-- title + schematic body lines -->
+   <text x="140" y="150" text-anchor="middle" font-size="24" font-weight="800" fill="#2B1D12" font-family="sans-serif">App blocked</text>
+   <rect x="58" y="162" width="164" height="7" rx="3.5" fill="#D9C7AE"/>
+   <rect x="78" y="176" width="124" height="7" rx="3.5" fill="#D9C7AE"/>
+   <!-- buttons: Cancel + Install anyway (highlighted) -->
+   <rect x="40" y="198" width="86" height="34" rx="11" fill="#eee" stroke="#2B1D12" stroke-width="3"/>
+   <text x="83" y="220" text-anchor="middle" font-size="14" font-weight="800" fill="#2B1D12" font-family="sans-serif">Cancel</text>
+   <rect x="134" y="198" width="106" height="34" rx="11" fill="#0B6B3A" stroke="#2B1D12" stroke-width="3"/>
+   <text x="187" y="220" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff" font-family="sans-serif">Install anyway</text>
+   <rect x="128" y="192" width="118" height="46" rx="15" fill="none" stroke="#F2C14E" stroke-width="4.5"/>
+   <!-- finger tapping Install anyway -->
+   <g transform="translate(170,238) scale(1.05)">
+    <path d="M16 4 Q22 0 26 4 V24 L38 26 Q44 28 43 36 L40 50 Q38 55 32 55 H18 Q12 55 9 50 L3 38 Q1 33 6 32 L14 36 V6Z" fill="#C68657" stroke="#2B1D12" stroke-width="3" stroke-linejoin="round"/>
+   </g>
+  </svg>
+  <ol class="steps">
+   <li class="step"><span class="num">1</span><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 3 H24 L33 12 V37 H8Z" fill="#fff" stroke="#2B1D12" stroke-width="3" stroke-linejoin="round"/><path d="M24 3 V12 H33" fill="none" stroke="#2B1D12" stroke-width="3"/><text x="20" y="30" text-anchor="middle" font-size="9" font-weight="800" fill="#0B6B3A" font-family="sans-serif">APK</text></svg><span class="tx"><span class="ta">Download ஆன file-ஐ அழுத்தி Install பண்ணுங்க</span><span class="en">Tap the downloaded file to install</span></span></li>
+   <li class="step"><span class="num">2</span><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="5" y="6" width="30" height="24" rx="6" fill="#fff" stroke="#2B1D12" stroke-width="3"/><path d="M15 30 L15 37 L22 30" fill="#fff" stroke="#2B1D12" stroke-width="3" stroke-linejoin="round"/><path d="M20 11 V19" stroke="#C0432C" stroke-width="3.5" stroke-linecap="round"/><circle cx="20" cy="24.5" r="2.4" fill="#C0432C"/></svg><span class="tx"><span class="ta">"App blocked" வந்தா → "More details" அழுத்துங்க</span><span class="en">If "App blocked" shows, tap "More details"</span></span></li>
+   <li class="step"><span class="num">3</span><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="3" y="10" width="34" height="20" rx="10" fill="#12884B" stroke="#2B1D12" stroke-width="3"/><circle cx="27" cy="20" r="7" fill="#fff" stroke="#2B1D12" stroke-width="2"/><path d="M24 20 L26.5 22.5 L31 17.5" fill="none" stroke="#0B6B3A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="tx"><span class="ta">"Install anyway" அழுத்துங்க — Savari install ஆகிடும்</span><span class="en">Tap "Install anyway" — Savari installs</span></span></li>
+  </ol>
+ </div>
+ <div class="calm">
+  <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4 L41 10 V22 Q41 38 24 45 Q7 38 7 22 V10Z" fill="#0B6B3A" stroke="#2B1D12" stroke-width="3" stroke-linejoin="round"/><path d="M15 24 L21 30 L34 16" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span><span class="ta">Savari பாதுகாப்பானது. Play Store-க்கு வெளியே இருந்து போடுற எல்லா app-க்கும் இந்த message வரும் — உங்க phone-ல எதுவும் மாறாது.</span><span class="en">Savari is safe. This message appears for every app installed from outside the Play Store — nothing on your phone is changed.</span></span>
+ </div>
 </section>
 
 <!-- RISKS -->
