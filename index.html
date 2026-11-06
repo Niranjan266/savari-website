@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="ta" data-lang="both">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Savari – சவாரி | நல்ல fare-ஐ தானா Accept பண்ணும்</title>
+<meta name="description" content="ஆட்டோ, கேப் டிரைவர்களுக்கு. நீங்க வெச்ச தொகைக்கு மேல fare வந்தா Savari தானா Accept பண்ணும். For auto and cab drivers in Tamil Nadu: Savari presses Accept when the fare is your amount or more.">
+<meta name="theme-color" content="#0B6B3A">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Savari">
+<meta property="og:locale" content="ta_IN">
+<meta property="og:locale:alternate" content="en_IN">
+<meta property="og:title" content="Savari – நல்ல fare வந்தா தானா Accept!">
+<meta property="og:description" content="Good fare? Savari presses Accept for you. For auto and cab drivers in Tamil Nadu. Tamil + English. Android app.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Savari – auto-accept for drivers">
+<meta name="twitter:description" content="Good fare? Savari presses Accept for you. Tamil + English.">
+<script>(function(){var l='both';try{var v=localStorage.getItem('savari-lang');if(v==='ta'||v==='en'||v==='both')l=v}catch(e){}var h=document.documentElement;h.setAttribute('data-lang',l);h.lang=l==='en'?'en':'ta'})()</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--g:#0B6B3A;--g2:#12884B;--gold:#F2C14E;--ink:#2B1D12;--cream:#FFF1DA;--paper:#FFFBF2;--peach:#FFD9B3;--coral:#EE7F55;--red:#C0432C;--khaki:#C9A86A;--skin:#C68657;color-scheme:light}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+html,body{overflow-x:hidden}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"Baloo Thambi 2","Noto Sans Tamil","Latha",system-ui,sans-serif;font-size:19px;line-height:1.3;padding-bottom:96px;
+ background-image:radial-gradient(rgba(43,29,18,.07) 1.2px,transparent 1.3px);background-size:14px 14px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.ta{display:block;font-weight:800}
+.en{display:block;font-weight:500;font-size:.82em;opacity:.78}
+h2{margin:0 0 6px;font-size:30px;line-height:1.15}
+h2 .en{font-size:.62em}
+section{padding:40px 0}
+a{color:inherit}
+
+/* header */
+header{padding:14px 0 0}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:56px;height:56px;flex:none;filter:drop-shadow(3px 3px 0 var(--ink))}
+.brand b{font-size:30px;line-height:1}
+.brand small{display:block;font-size:15px;opacity:.75}
+
+/* hero */
+.hero{padding:22px 0 10px;display:grid;gap:18px;align-items:center}
+.hero h1{margin:0;font-size:31px;line-height:1.15;overflow-wrap:anywhere}
+.hero h1 .en{font-size:.55em;margin-top:6px}
+.rule{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.chip{display:flex;align-items:center;gap:10px;background:var(--paper);border:3px solid var(--ink);border-radius:16px;padding:8px 14px;box-shadow:4px 4px 0 var(--ink)}
+.chip .big{font-size:34px;font-weight:800;line-height:1}
+.chip.ok .big{color:var(--g)} .chip.no .big{color:var(--red)}
+.chip .t{font-size:16px;line-height:1.15}
+.dl{display:flex;align-items:center;justify-content:center;gap:14px;width:100%;max-width:460px;min-height:76px;padding:12px 20px;background:var(--g);color:#fff;text-decoration:none;border:4px solid var(--ink);border-radius:20px;box-shadow:6px 6px 0 var(--ink);font-size:24px;font-weight:800;line-height:1.1;transition:transform .1s,box-shadow .1s}
+.dl:active{transform:translate(4px,4px);box-shadow:2px 2px 0 var(--ink)}
+.dl svg{width:40px;height:40px;flex:none}
+.dl .en{font-size:17px;opacity:.9;color:#fff}
+.sub{margin-top:10px;font-size:16px}
+.sub a{font-weight:700}
+.heroart{max-width:420px;margin:0 auto;width:100%}
+@media(min-width:860px){.hero{grid-template-columns:1.1fr .9fr}.hero h1{font-size:50px}}
+
+/* comic */
+.strip{display:grid;gap:18px;grid-template-columns:1fr;margin-top:16px}
+@media(min-width:620px){.strip{grid-template-columns:1fr 1fr}}
+@media(min-width:1060px){.strip{grid-template-columns:repeat(4,1fr)}}
+.panel{position:relative;background:var(--paper);border:4px solid var(--ink);border-radius:16px;box-shadow:6px 6px 0 var(--ink);overflow:hidden}
+.panel:nth-child(odd){transform:rotate(-.6deg)} .panel:nth-child(even){transform:rotate(.6deg)}
+.cap{display:flex;gap:10px;align-items:center;background:var(--gold);border-bottom:4px solid var(--ink);padding:6px 12px;font-size:18px}
+.cap .n{flex:none;width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--gold);display:grid;place-items:center;font-size:24px;font-weight:800}
+.cap .en{font-size:15px}
+.scene{position:relative}
+.scene svg{display:block;width:100%;height:auto}
+.bubble{position:absolute;top:10px;right:10px;max-width:64%;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:6px 12px;font-size:17px;line-height:1.2;box-shadow:3px 3px 0 rgba(43,29,18,.25)}
+.bubble .en{font-size:14px}
+.bubble::after{content:"";position:absolute;left:18px;bottom:-16px;border:9px solid transparent;border-top:14px solid var(--ink);border-left-width:4px}
+.bubble::before{content:"";position:absolute;left:21px;bottom:-9px;width:0;height:0;border:6px solid transparent;border-top:10px solid #fff;border-left-width:3px;z-index:1}
+.bubble.sv{background:var(--g);color:#fff}
+.bubble.sv::before{border-top-color:var(--g)}
+.bubble.sv::after{left:auto;right:30px} .bubble.sv::before{left:auto;right:33px}
+.bubble.sv .en{color:#fff}
+.bubble.think{border-style:dashed}
+.js .panel .bubble{opacity:0;transform:scale(.6) translateY(10px);transition:opacity .35s,transform .45s cubic-bezier(.3,1.6,.5,1)}
+.js .panel.in .bubble{opacity:1;transform:none}
+.panel.in:nth-child(2) .bubble{transition-delay:.1s}
+
+/* demo */
+.demo{display:grid;gap:22px;justify-items:center;margin-top:18px}
+@media(min-width:820px){.demo{grid-template-columns:auto 1fr;align-items:center;justify-items:start}}
+.phone{position:relative;width:280px;height:520px;background:var(--ink);border-radius:40px;padding:14px;box-shadow:8px 8px 0 rgba(43,29,18,.3)}
+.notch{position:absolute;top:20px;left:50%;width:70px;height:8px;margin-left:-35px;background:#000;border-radius:6px;z-index:3}
+.screen{position:relative;width:100%;height:100%;border-radius:28px;overflow:hidden;background:#EAF2E6}
+.map{position:absolute;inset:0}
+.svpill{position:absolute;top:30px;left:12px;right:12px;display:flex;align-items:center;gap:8px;background:#fff;border:3px solid var(--ink);border-radius:30px;padding:4px 10px 4px 4px;font-size:16px;font-weight:800;z-index:2}
+.svpill svg{width:34px;height:34px}
+.svpill .on{margin-left:auto;background:var(--g);color:#fff;border-radius:20px;padding:0 10px;font-size:14px}
+.status{position:absolute;top:84px;left:12px;right:12px;text-align:center;background:rgba(255,251,242,.92);border:2px solid var(--ink);border-radius:14px;padding:4px 6px;font-size:16px;z-index:2;min-height:52px}
+.status b{display:block} .status span{display:block;font-size:13px;opacity:.75}
+.card{position:absolute;left:10px;right:10px;bottom:10px;background:#fff;border:3px solid var(--ink);border-radius:22px;padding:12px 12px 14px;transform:translateY(120%);transition:transform .5s cubic-bezier(.2,1.3,.4,1),opacity .4s;z-index:2}
+.card.show{transform:none}
+.card.dim{opacity:.55}
+.card.out{transform:translateY(120%);transition:transform .4s ease-in}
+.ctitle{font-size:15px;font-weight:700;opacity:.75}
+.fare{font-size:58px;font-weight:800;line-height:1;margin:2px 0}
+.route{font-size:14px;display:flex;gap:6px;align-items:center;opacity:.8}
+.route i{width:10px;height:10px;border-radius:50%;background:var(--g);display:inline-block}
+.route i.d{background:var(--red)}
+.btns{display:grid;grid-template-columns:1fr 1.3fr;gap:8px;margin-top:10px}
+.b{border:3px solid var(--ink);border-radius:14px;text-align:center;padding:10px 4px;font-weight:800;font-size:18px}
+.b.dec{background:#eee}
+.b.acc{background:var(--g2);color:#fff;transition:transform .12s,background .2s}
+.b.acc.pressed{transform:scale(.92);background:var(--g)}
+.badge{position:absolute;top:-24px;right:8px;background:var(--ink);color:#fff;border-radius:14px;padding:4px 12px;font-size:20px;font-weight:800;transform:scale(0);transition:transform .35s cubic-bezier(.3,1.6,.5,1)}
+.badge.show{transform:scale(1)}
+.badge.ok{background:var(--g)} .badge.no{background:var(--red)}
+.stamp{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%) rotate(-10deg) scale(2);opacity:0;border:5px solid;border-radius:14px;padding:4px 12px;font-size:24px;font-weight:800;background:rgba(255,255,255,.92);white-space:nowrap;transition:transform .3s cubic-bezier(.3,1.5,.5,1),opacity .2s;text-align:center;line-height:1.05}
+.stamp .en{font-size:15px;opacity:1}
+.stamp.show{opacity:1;transform:translate(-50%,-50%) rotate(-10deg) scale(1)}
+.stamp.ok{color:var(--g);border-color:var(--g)} .stamp.no{color:var(--red);border-color:var(--red)}
+.tap{position:absolute;right:46px;bottom:-60px;width:46px;height:56px;opacity:0;transition:transform .4s ease-out,opacity .2s;pointer-events:none;z-index:3}
+.tap.go{opacity:1;transform:translate(-6px,-66px)}
+.tap::after{content:"";position:absolute;left:-6px;top:-10px;width:30px;height:30px;border-radius:50%;border:3px solid var(--gold);opacity:0}
+.tap.go::after{animation:ring .5s .35s ease-out}
+@keyframes ring{from{opacity:1;transform:scale(.4)}to{opacity:0;transform:scale(1.8)}}
+.side{max-width:460px;width:100%;min-width:0}
+.setbox{background:var(--paper);border:4px solid var(--ink);border-radius:18px;box-shadow:5px 5px 0 var(--ink);padding:12px 16px;display:flex;align-items:center;gap:14px}
+.setbox .amt{font-size:52px;font-weight:800;color:var(--g);line-height:1}
+.rules{display:grid;gap:10px;margin:14px 0}
+.rules div{display:flex;gap:10px;align-items:center;font-size:17px}
+.rules .ic{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:800;font-size:22px;border:3px solid var(--ink)}
+.log{list-style:none;margin:0;padding:0;display:grid;gap:8px;min-height:120px}
+.log li{display:flex;align-items:center;gap:10px;background:#fff;border:3px solid var(--ink);border-radius:14px;padding:6px 12px;font-size:16px;animation:pop .35s cubic-bezier(.3,1.6,.5,1)}
+.log li b{font-size:26px;min-width:76px}
+.log li.ok b{color:var(--g)} .log li.no b{color:var(--red)}
+@keyframes pop{from{transform:scale(.7);opacity:0}}
+.loghead{font-size:16px;font-weight:800;margin:4px 0 8px}
+.replay{margin-top:14px;display:inline-flex;align-items:center;gap:10px;min-height:56px;padding:8px 20px;font:inherit;font-size:18px;font-weight:800;background:var(--gold);color:var(--ink);border:3px solid var(--ink);border-radius:16px;box-shadow:4px 4px 0 var(--ink);cursor:pointer}
+.replay:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+
+/* apps */
+.apps{display:grid;gap:12px;grid-template-columns:1fr;margin-top:14px}
+@media(min-width:620px){.apps{grid-template-columns:1fr 1fr}}
+.app{display:flex;align-items:center;gap:14px;background:var(--paper);border:3px solid var(--ink);border-radius:16px;padding:12px 14px}
+.app .nm{font-size:24px;font-weight:800;min-width:118px}
+.tag{border-radius:12px;padding:4px 10px;font-size:15px;line-height:1.15;border:2px solid var(--ink)}
+.tag.yes{background:var(--g);color:#fff}
+.tag.soon{background:var(--peach)}
+.app.live{border-width:4px;box-shadow:5px 5px 0 var(--g)}
+
+/* features */
+.feats{display:grid;gap:12px;grid-template-columns:1fr 1fr;margin-top:14px}
+@media(min-width:860px){.feats{grid-template-columns:repeat(4,1fr)}}
+.feat{background:var(--paper);border:3px solid var(--ink);border-radius:16px;padding:12px;text-align:center;font-size:17px}
+.feat svg{width:56px;height:56px;display:block;margin:0 auto 6px}
+.feat .en{font-size:14px}
+
+/* steps */
+.steps{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:14px}
+@media(min-width:760px){.steps{grid-template-columns:1fr 1fr}}
+.step{display:flex;gap:14px;align-items:center;background:#fff;border:4px solid var(--ink);border-radius:18px;padding:10px 14px;box-shadow:5px 5px 0 var(--ink)}
+.step .num{flex:none;width:58px;height:58px;border-radius:50%;background:var(--gold);border:3px solid var(--ink);display:grid;place-items:center;font-size:34px;font-weight:800}
+.step svg{flex:none;width:52px;height:52px}
+.step .tx{font-size:19px}
+.step .tx .en{font-size:15px}
+.step a{display:inline-block;margin-top:4px;background:var(--g);color:#fff;border-radius:10px;padding:2px 10px;text-decoration:none;font-weight:800;font-size:16px}
+
+/* warn */
+.warn{background:#FFE7DE;border:4px solid var(--red);border-radius:20px;padding:16px;box-shadow:6px 6px 0 var(--red)}
+.warn h2{color:var(--red);display:flex;gap:10px;align-items:center}
+.warn h2 svg{width:46px;height:46px;flex:none}
+.warn ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:12px}
+.warn li{display:flex;gap:12px;align-items:flex-start;font-size:18px}
+.warn li svg{flex:none;width:40px;height:40px}
+
+/* final */
+.final{text-align:center}
+.final .dl{margin:14px auto 0}
+footer{padding:20px 0 30px;text-align:center;font-size:15px;opacity:.8}
+
+/* sticky bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(255,241,218,.97);border-top:4px solid var(--ink);padding:10px 16px calc(10px + env(safe-area-inset-bottom))}
+.bar .dl{max-width:none;min-height:62px;font-size:21px;box-shadow:4px 4px 0 var(--ink)}
+.bar .dl svg{width:32px;height:32px}
+@media(min-width:900px){.bar{display:none}body{padding-bottom:0}}
+
+
+/* language */
+.i{display:inline}
+html[data-lang=ta] .en,html[data-lang=en] .ta{display:none!important}
+html:not([data-lang=both]) .sep{display:none}
+html[data-lang=en] .en{font-size:1em!important;opacity:1!important;font-weight:800;margin-top:0!important}
+html[data-lang=en] .chip .t .en,html[data-lang=en] .rules .en,html[data-lang=en] .tag .en{font-weight:700}
+.langbar{position:sticky;top:0;z-index:25;background:rgba(255,241,218,.97);border-bottom:3px solid var(--ink);padding:8px 0}
+.lbin{display:flex;align-items:center;gap:12px}
+.lblogo{width:40px;height:40px;flex:none;display:none}
+.seg{display:grid;grid-template-columns:1.5fr 1fr 1fr;flex:1;max-width:520px;margin-left:auto;border:3px solid var(--ink);border-radius:16px;overflow:hidden;background:#fff;box-shadow:3px 3px 0 var(--ink)}
+.seg button{font:inherit;font-size:16px;font-weight:800;min-height:50px;padding:4px 6px;border:0;border-left:3px solid var(--ink);background:#fff;color:var(--ink);cursor:pointer;line-height:1.1}
+.seg button:first-child{border-left:0}
+.seg button[aria-pressed=true]{background:var(--g);color:#fff}
+@media(min-width:600px){.lblogo{display:block}.seg button{font-size:18px}}
+.step a.dlink{color:#fff}
+/* overlay */
+.ov{position:fixed;inset:0;z-index:50;background:rgba(43,29,18,.6);display:flex;align-items:flex-end;justify-content:center}
+.ov[hidden]{display:none}
+.ovbox{position:relative;width:100%;max-width:520px;max-height:100%;overflow:auto;background:var(--paper);border:4px solid var(--ink);border-bottom:0;border-radius:24px 24px 0 0;padding:14px 16px calc(18px + env(safe-area-inset-bottom));animation:up .35s cubic-bezier(.2,1.2,.4,1)}
+@media(min-width:600px){.ov{align-items:center;padding:16px}.ovbox{border-bottom:4px solid var(--ink);border-radius:24px;box-shadow:8px 8px 0 var(--ink)}}
+@keyframes up{from{transform:translateY(40px);opacity:0}}
+.ovx{position:absolute;top:10px;right:10px;width:48px;height:48px;border-radius:50%;border:3px solid var(--ink);background:#fff;display:grid;place-items:center;cursor:pointer;z-index:2}
+.ovart{display:block;width:100%;height:auto;border:3px solid var(--ink);border-radius:18px;margin-top:50px}
+.ovbox h2{margin-top:12px;font-size:28px}
+.ovp{margin:0 0 10px;font-size:18px}
+.nx{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.nx li{display:flex;align-items:center;gap:10px;background:#fff;border:3px solid var(--ink);border-radius:14px;padding:6px 10px;font-size:17px}
+.nx .nn{flex:none;width:36px;height:36px;border-radius:50%;background:var(--gold);border:3px solid var(--ink);display:grid;place-items:center;font-weight:800;font-size:20px}
+.nx svg{flex:none;width:38px;height:38px}
+.nx .en{font-size:14px}
+.ovact{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.ovact>*{flex:1 1 140px;min-height:54px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;text-align:center;border:3px solid var(--ink);border-radius:14px;font:inherit;font-size:17px;font-weight:800;padding:6px 10px;cursor:pointer;text-decoration:none}
+.again{background:var(--gold);color:var(--ink)}
+.ovclose{background:var(--g);color:#fff}
+.ovauto{animation:drive 3.2s ease-in-out infinite}
+.parcel{animation:drop 3.2s ease-in-out infinite}
+.pbar{animation:fill 3.2s linear infinite}
+.pchk{opacity:0;animation:chk 3.2s infinite}
+.road{animation:road .6s linear infinite}
+@keyframes drive{0%{transform:translateX(-120px)}45%,80%{transform:translateX(140px);opacity:1}100%{transform:translateX(140px);opacity:0}}
+@keyframes drop{0%,45%{transform:none;opacity:1}62%,100%{transform:translate(110px,20px) scale(.4);opacity:0}}
+@keyframes fill{0%,55%{fill:#E3F1E4}70%,100%{fill:#12884B}}
+@keyframes chk{0%,65%{opacity:0}75%,100%{opacity:1}}
+@keyframes road{to{stroke-dashoffset:-32}}
+@media(prefers-reduced-motion:reduce){.ovauto{transform:translateX(140px)}.parcel{opacity:0}.pbar{fill:#12884B}.pchk{opacity:1}}
+/* desktop */
+@media(min-width:900px){
+ body{font-size:20px}
+ .wrap{max-width:1200px;padding:0 32px}
+ section{padding:56px 0}
+ h2{font-size:38px}
+ .hero{gap:40px;padding:40px 0 20px}
+ .demo{gap:56px;grid-template-columns:auto minmax(0,520px);justify-content:center}
+ .side{max-width:520px}
+ .feats{grid-template-columns:repeat(4,1fr)}
+ .apps{grid-template-columns:repeat(4,1fr)}
+ .app{flex-direction:column;align-items:flex-start}
+}
+@media(min-width:1060px){.bubble{font-size:15px;max-width:70%;padding:5px 10px}.bubble .en{font-size:12.5px}}
+@media(min-width:1280px){.bubble{font-size:17px}.bubble .en{font-size:14px}.hero h1{font-size:58px}}
+@media(min-width:1600px){.wrap{max-width:1360px}body{font-size:21px}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:4px solid var(--coral);outline-offset:3px}
+
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .js .panel .bubble{opacity:1;transform:none}
+ .zz{display:none}
+}
+.zz{animation:float 2.4s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-6px)}}
+.buzz{animation:buzz .5s steps(2) infinite}
+@keyframes buzz{50%{transform:translateX(2px)}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<!-- shared drawings -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+ <defs>
+  <symbol id="logo" viewBox="0 0 100 100">
+   <circle cx="50" cy="50" r="49" fill="#0B6B3A"/>
+   <circle cx="50" cy="50" r="33" fill="none" stroke="#fff" stroke-width="9"/>
+   <path d="M21 52 H29 M71 52 H79 M50 79 V73" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+   <path d="M38 35 H62 M38 43 H62 M45 35 Q57 35 57 44 Q57 53 45 53 L60 67" fill="none" stroke="#F2C14E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <!-- driver: head + torso, local box 120x170; arms/eyes/mouth added per scene -->
+  <symbol id="drv" viewBox="0 0 120 170" overflow="visible">
+   <rect x="51" y="78" width="18" height="22" fill="#C68657" stroke="#2B1D12" stroke-width="3"/>
+   <path d="M18 172 V122 Q18 96 46 94 H74 Q102 96 102 122 V172 Z" fill="#C9A86A" stroke="#2B1D12" stroke-width="3.5" stroke-linejoin="round"/>
+   <path d="M46 94 L60 114 L74 94" fill="#B48F4F" stroke="#2B1D12" stroke-width="3" stroke-linejoin="round"/>
+   <path d="M60 114 V172" stroke="#2B1D12" stroke-width="2"/>
+   <circle cx="60" cy="128" r="2.5" fill="#2B1D12"/><circle cx="60" cy="146" r="2.5" fill="#2B1D12"/>
+   <rect x="70" y="122" width="18" height="14" rx="2" fill="#B48F4F" stroke="#2B1D12" stroke-width="2.5"/>
+   <circle cx="31" cy="60" r="7" fill="#C68657" stroke="#2B1D12" stroke-width="3"/>
+   <circle cx="89" cy="60" r="7" fill="#C68657" stroke="#2B1D12" stroke-width="3"/>
+   <circle cx="60" cy="58" r="29" fill="#C68657" stroke="#2B1D12" stroke-width="3.5"/>
+   <path d="M31 54 Q30 26 60 25 Q90 26 89 54 Q84 40 70 38 Q62 44 50 40 Q38 42 31 54Z" fill="#2B1D12"/>
+   <path d="M44 70 Q52 63 60 68 Q68 63 76 70 Q68 75 60 71 Q52 75 44 70Z" fill="#2B1D12"/>
+   <ellipse cx="42" cy="66" rx="5" ry="3" fill="#E39A7A" opacity=".55"/>
+   <ellipse cx="78" cy="66" rx="5" ry="3" fill="#E39A7A" opacity=".55"/>
+  </symbol>
+  <!-- auto rickshaw, box 150x120 -->
+  <symbol id="auto" viewBox="0 0 150 120" overflow="visible">
+   <path d="M14 96 V46 Q14 14 52 12 H104 Q136 14 138 46 V96 Z" fill="#F2C14E" stroke="#2B1D12" stroke-width="3.5" stroke-linejoin="round"/>
+   <path d="M8 46 Q10 4 52 2 H106 Q142 4 144 46 Z" fill="#0B6B3A" stroke="#2B1D12" stroke-width="3.5" stroke-linejoin="round"/>
+   <path d="M26 50 H72 V78 H26 Z" fill="#FFF4E0" stroke="#2B1D12" stroke-width="3"/>
+   <path d="M86 50 H126 V96 H86" fill="#2B1D12" opacity=".85"/>
+   <rect x="14" y="82" width="124" height="8" fill="#2B1D12" opacity=".2"/>
+   <circle cx="36" cy="100" r="15" fill="#2B1D12"/><circle cx="36" cy="100" r="6" fill="#9a8a78"/>
+   <circle cx="116" cy="100" r="15" fill="#2B1D12"/><circle cx="116" cy="100" r="6" fill="#9a8a78"/>
+   <circle cx="140" cy="66" r="5" fill="#FFF4E0" stroke="#2B1D12" stroke-width="2"/>
+  </symbol>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE2B8"/><stop offset="1" stop-color="#FFF6E6"/></linearGradient>
+ </defs>
+</svg>
+
+<div class="langbar"><div class="wrap lbin">
+ <svg class="lblogo" viewBox="0 0 100 100" aria-hidden="true"><use href="#logo"/></svg>
+ <div class="seg" role="group" aria-label="மொழி / Language">
+  <button type="button" data-l="both" aria-pressed="true">தமிழ் + English</button>
+  <button type="button" data-l="ta" aria-pressed="false">தமிழ்</button>
+  <button type="button" data-l="en" aria-pressed="false">English</button>
+ </div>
+</div></div>
+
+<header class="wrap">
+ <div class="brand">
+  <svg viewBox="0 0 100 100" role="img" aria-label="Savari logo"><use href="#logo"/></svg>
+  <div><b>சவாரி · Savari</b><small><span class="ta i">ஆட்டோ, கேப் டிரைவர்களுக்கு</span><span class="sep"> · </span><span class="en i">For auto &amp; cab drivers</span></small></div>
+ </div>
+</header>
+
+<main>
+<div class="wrap hero">
+ <div>
+  <h1><span class="ta">நல்ல காசு வந்தா, Savari தானா Accept பண்ணும்!</span><span class="en">Good fare? Savari presses Accept for you.</span></h1>
+  <div class="rule">
+   <div class="chip"><span class="big">₹200</span><span class="t"><span class="ta">நீங்க வைக்கிற தொகை</span><span class="en">You set the amount</span></span></div>
+   <div class="chip ok"><span class="big">₹250 ✓</span><span class="t"><span class="ta">₹200-க்கு மேல → Accept</span><span class="en">₹200 or more → Accept</span></span></div>
+   <div class="chip no"><span class="big">₹120 ✗</span><span class="t"><span class="ta">கம்மி → விட்டுடும்</span><span class="en">Lower → left alone</span></span></div>
+  </div>
+  <a class="dl" href="savari.apk" download="savari.apk">
+   <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#F2C14E" stroke="#2B1D12" stroke-width="3"/><path d="M24 11 V29 M15 21 L24 30 L33 21 M14 36 H34" fill="none" stroke="#2B1D12" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+   <span><span class="ta">இலவசமா டவுன்லோட்</span><span class="en">Download APK (Android)</span></span>
+  </a>
+  <div class="sub"><span class="ta i">Android phone-க்கு · இலவசம்</span><span class="sep"> · </span><span class="en i">For Android phones · Free</span></div>
+ </div>
+ <svg class="heroart" viewBox="0 0 320 250" role="img" aria-label="Driver with phone, Savari logo next to him">
+  <rect width="320" height="250" rx="24" fill="url(#sky)" stroke="#2B1D12" stroke-width="4"/>
+  <circle cx="262" cy="56" r="26" fill="#F2C14E" opacity=".7"/>
+  <rect x="2" y="214" width="316" height="34" fill="#D9B98C"/>
+  <use href="#auto" x="160" y="106" width="150" height="120"/>
+  <g transform="translate(30,80)">
+   <use href="#drv" width="120" height="170"/>
+   <path d="M98 122 Q126 116 128 92" fill="none" stroke="#2B1D12" stroke-width="18" stroke-linecap="round"/>
+   <path d="M98 122 Q126 116 128 92" fill="none" stroke="#C9A86A" stroke-width="11" stroke-linecap="round"/>
+   <path d="M22 122 Q8 144 16 168" fill="none" stroke="#2B1D12" stroke-width="18" stroke-linecap="round"/>
+   <path d="M22 122 Q8 144 16 168" fill="none" stroke="#C9A86A" stroke-width="11" stroke-linecap="round"/>
+   <path d="M44 54 Q50 49 56 54 M64 54 Q70 49 76 54" fill="none" stroke="#2B1D12" stroke-width="3.5" stroke-linecap="round"/>
+   <path d="M50 77 Q60 86 70 77" fill="#fff" stroke="#2B1D12" stroke-width="3" stroke-linejoin="round"/>
+   <rect x="112" y="40" width="34" height="56" rx="6" fill="#2B1D12" transform="rotate(8 129 68)"/>
+   <rect x="116" y="46" width="26" height="40" rx="3" fill="#fff" transform="rotate(8 129 68)"/>
+   <use href="#logo" x="117" y="54" width="24" height="24" transform="rotate(8 129 68)"/>
+   <circle cx="128" cy="92" r="9" fill="#C68657" stroke="#2B1D12" stroke-width="3"/>
+  </g>
+  <g transform="translate(228,26)"><path d="M0 14 L5 5 L10 14 L19 19 L10 24 L5 33 L0 24 L-9 19Z" fill="#fff" stroke="#2B1D12" stroke-width="2.5"/></g>
+ </svg>
+</div>
+
+<!-- COMIC -->
+<section class="wrap" id="story">
+ <h2><span class="ta">முருகன் அண்ணன் கதை</span><span class="en">Murugan anna's story</span></h2>
+ <div class="strip">
+  <article class="panel">
+   <div class="cap"><span class="n">1</span><span><span class="ta">காத்திருப்பு</span><span class="en">Waiting</span></span></div>
+   <div class="scene">
+    <svg viewBox="0 0 320 250" role="img" aria-label="Driver waiting near his auto, bored">
+     <rect width="320" height="250" fill="url(#sky)"/>
+     <rect y="222" width="320" height="28" fill="#D9B98C"/>
+     <g transform="translate(36,38)"><circle r="20" fill="#fff" stroke="#2B1D12" stroke-width="3"/><path d="M0 -12 V0 L9 6" fill="none" stroke="#2B1D12" stroke-width="3.5" stroke-linecap="round"/></g>
+     <use href="#auto" x="168" y="112" width="150" height="120"/>
+     <g transform="translate(26,80)">
+      <use href="#drv" width="120" height="170"/>
+      <path d="M26 134 Q60 150 94 134" fill="none" stroke="#2B1D12" stroke-width="18" stroke-linecap="round"/>
+      <path d="M26 134 Q60 150 94 134" fill="none" stroke="#C9A86A" stroke-width="11" stroke-linecap="round"/>
+      <path d="M44 57 Q50 61 56 57 M64 57 Q70 61 76 57" fill="none" stroke="#2B1D12" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M53 80 H67" stroke="#2B1D12" stroke-width="3.5" stroke-linecap="round"/>
+     </g>
+     <g class="zz" font-family="sans-serif" font-weight="800" fill="#2B1D12"><text x="126" y="104" font-size="20">z</text><text x="140" y="88" font-size="15">z</text></g>
+    </svg>
+    <div class="bubble think"><span class="ta">சவாரி எப்போ வரும்...?</span><span class="en">When will a ride come...?</span></div>
+   </div>
+  </article>
+
+  <article class="panel">
+   <div class="cap"><span class="n">2</span><span><span class="ta">சவாரி வந்துச்சு</span><span class="en">An offer comes</span></span></div>
+   <div class="scene">
+    <svg viewBox="0 0 320 250" role="img" aria-label="Phone buzzes with a 250 rupee ride offer">
+     <rect width="320" height="250" fill="url(#sky)"/>
+     <rect y="222" width="320" height="28" fill="#D9B98C"/>
+     <g transform="translate(26,80)">
+      <use href="#drv" width="120" height="170"/>
+      <path d="M22 122 Q8 144 16 168" fill="none" stroke="#2B1D12" stroke-width="18" stroke-linecap="round"/>
+      <path d="M22 122 Q8 144 16 168" fill="none" stroke="#C9A86A" stroke-width="11" stroke-linecap="round"/>
+      <path d="M98 122 Q130 120 140 98" fill="none" stroke="#2B1D12" stroke-width="18" stroke-linecap="round"/>
+      <path d="M98 122 Q130 120 140 98" fill="none" stroke="#C9A86A" stroke-width="11" stroke-linecap="round"/>
+      <circle cx="50" cy="56" r="6" fill="#fff" stroke="#2B1D12" stroke-width="2.5"/><circle cx="52" cy="56" r="3" fill="#2B1D12"/>
+      <circle cx="70" cy="56" r="6" fill="#fff" stroke="#2B1D12" stroke-width="2.5"/><circle cx="72" cy="56" r="3" fill="#2B1D12"/>
+      <path d="M43 44 Q50 40 56 44 M64 44 Q70 40 77 44" fill="none" stroke="#2B1D12" stroke-width="3" stroke-linecap="round"/>
+      <ellipse cx="60" cy="80" rx="5" ry="6" fill="#2B1D12"/>
+      <g class="buzz">
+       <rect x="122" y="22" width="56" height="82" rx="8" fill="#2B1D12"/>
+       <rect x="127" y="30" width="46" height="64" rx="4" fill="#fff"/>
+       <text x="150" y="46" text-anchor="middle" font-size="9" font-weight="700" fill="#2B1D12" font-family="sans-serif">NEW RIDE</text>
+       <text x="150" y="70" text-anchor="middle" font-size="20" font-weight="800" fill="#0B6B3A" font-family="sans-serif">₹250</text>
+       <rect x="132" y="78" width="36" height="11" rx="4" fill="#12884B"/>
+      </g>
+      <circle cx="140" cy="100" r="9" fill="#C68657" stroke="#2B1D12" stroke-width="3"/>
+      <path d="M186 40 l10 -6 M188 58 h12 M186 76 l10 6" stroke="#EE7F55" stroke-width="4" stroke-linecap="round"/>
+     </g>
+    </svg>
+    <div class="bubble" style="right:auto;left:10px;top:10px;max-width:58%"><span class="ta">அட! ₹250 சவாரி!</span><span class="en">Oh! A ₹250 ride!</span></div>
+   </div>
+  </article>
+
+  <article class="panel">
+   <div class="cap"><span class="n">3</span><span><span class="ta">Savari Accept பண்ணுது</span><span class="en">Savari accepts</span></span></div>
+   <div class="scene">
+    <svg viewBox="0 0 320 250" role="img" aria-label="Savari checks 250 is more than 200 and taps Accept">
+     <rect width="320" height="250" fill="#E3F1E4"/>
+     <g opacity=".35" stroke="#0B6B3A" stroke-width="3">
+      <path d="M160 160 L20 60 M160 160 L300 60 M160 160 L10 200 M160 160 L310 210"/>
+     </g>
+     <rect x="96" y="92" width="128" height="156" rx="16" fill="#2B1D12"/>
+     <rect x="104" y="102" width="112" height="146" rx="10" fill="#fff"/>
+     <text x="160" y="140" text-anchor="middle" font-size="30" font-weight="800" fill="#0B6B3A" font-family="sans-serif">₹250</text>
+     <rect x="114" y="150" width="92" height="26" rx="13" fill="#2B1D12"/>
+     <text x="160" y="169" text-anchor="middle" font-size="15" font-weight="800" fill="#fff" font-family="sans-serif">250 ≥ 200</text>
+     <rect x="114" y="186" width="92" height="36" rx="10" fill="#12884B" stroke="#2B1D12" stroke-width="3"/>
+     <text x="160" y="210" text-anchor="middle" font-size="15" font-weight="800" fill="#fff" font-family="sans-serif">ACCEPT ✓</text>
+     <circle cx="182" cy="204" r="22" fill="none" stroke="#F2C14E" stroke-width="5"/>
+     <use href="#logo" x="30" y="150" width="70" height="70"/>
+     <path d="M98 176 Q130 200 150 204" fill="none" stroke="#2B1D12" stroke-width="3" stroke-dasharray="6 6"/>
+     <g fill="#F2C14E" stroke="#2B1D12" stroke-width="2"><path d="M262 120 l5 10 l10 5 l-10 5 l-5 10 l-5 -10 l-10 -5 l10 -5z"/><path d="M60 110 l4 8 l8 4 l-8 4 l-4 8 l-4 -8 l-8 -4 l8 -4z"/></g>
+    </svg>
+    <div class="bubble sv"><span class="ta">நானே Accept பண்ணிட்டேன்!</span><span class="en">I pressed Accept for you!</span></div>
+   </div>
+  </article>
+
+  <article class="panel">
+   <div class="cap"><span class="n">4</span><span><span class="ta">சந்தோஷம்!</span><span class="en">Happy driver</span></span></div>
+   <div class="scene">
+    <svg viewBox="0 0 320 250" role="img" aria-label="Driver happy with arms raised next to his auto">
+     <rect width="320" height="250" fill="url(#sky)"/>
+     <circle cx="90" cy="150" r="96" fill="#FFD27A" opacity=".45"/>
+     <rect y="222" width="320" height="28" fill="#D9B98C"/>
+     <use href="#auto" x="168" y="112" width="150" height="120"/>
+     <g transform="translate(30,80)">
+      <use href="#drv" width="120" height="170"/>
+      <path d="M26 114 Q4 92 8 64" fill="none" stroke="#2B1D12" stroke-width="18" stroke-linecap="round"/>
+      <path d="M26 114 Q4 92 8 64" fill="none" stroke="#C9A86A" stroke-width="11" stroke-linecap="round"/>
+      <path d="M94 114 Q116 92 112 64" fill="none" stroke="#2B1D12" stroke-width="18" stroke-linecap="round"/>
+      <path d="M94 114 Q116 92 112 64" fill="none" stroke="#C9A86A" stroke-width="11" stroke-linecap="round"/>
+      <circle cx="8" cy="60" r="9" fill="#C68657" stroke="#2B1D12" stroke-width="3"/>
+      <circle cx="112" cy="60" r="9" fill="#C68657" stroke="#2B1D12" stroke-width="3"/>
+      <path d="M44 56 Q50 49 56 56 M64 56 Q70 49 76 56" fill="none" stroke="#2B1D12" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M46 75 Q60 94 74 75 Z" fill="#7a2a1a" stroke="#2B1D12" stroke-width="3" stroke-linejoin="round"/>
+     </g>
+     <g font-family="sans-serif" font-weight="800" font-size="16" text-anchor="middle">
+      <circle cx="170" cy="96" r="14" fill="#F2C14E" stroke="#2B1D12" stroke-width="3"/><text x="170" y="102" fill="#2B1D12">₹</text>
+      <circle cx="18" cy="120" r="12" fill="#F2C14E" stroke="#2B1D12" stroke-width="3"/><text x="18" y="126" fill="#2B1D12" font-size="14">₹</text>
+     </g>
+    </svg>
+    <div class="bubble"><span class="ta">சூப்பர்! Pickup பாத்துட்டு கிளம்புறேன்.</span><span class="en">Super! I'll check pickup, then go.</span></div>
+   </div>
+  </article>
+ </div>
+</section>
+
+<!-- DEMO -->
+<section class="wrap" id="demo">
+ <h2><span class="ta">எப்படி வேலை செய்யுது? பாருங்க</span><span class="en">Watch how it works</span></h2>
+ <div class="demo">
+  <div class="phone" role="img" aria-label="Demo: a ₹250 offer is accepted automatically because it is ₹200 or more. A ₹120 offer is skipped.">
+   <div class="notch"></div>
+   <div class="screen" aria-hidden="true">
+    <svg class="map" viewBox="0 0 252 492" preserveAspectRatio="xMidYMid slice">
+     <rect width="252" height="492" fill="#EAF2E6"/>
+     <path d="M-10 200 Q120 170 270 240 M60 -10 Q90 240 40 500 M180 -10 Q160 260 230 500" stroke="#fff" stroke-width="18" fill="none"/>
+     <path d="M-10 330 H270" stroke="#fff" stroke-width="12"/>
+     <circle cx="120" cy="250" r="9" fill="#0B6B3A" stroke="#fff" stroke-width="4"/>
+    </svg>
+    <div class="svpill"><svg viewBox="0 0 100 100"><use href="#logo"/></svg>Savari · ₹200<span class="on">ON</span></div>
+    <div class="status" id="status"><b class="ta">சவாரிக்கு காத்திருக்கு…</b><span class="en">Waiting for a ride…</span></div>
+    <div class="card" id="card">
+     <div class="badge" id="badge"></div>
+     <div class="ctitle"><span class="ta i">புது சவாரி</span><span class="sep"> · </span><span class="en i">New ride</span></div>
+     <div class="fare" id="fare">₹250</div>
+     <div class="route"><i></i> Pickup <span>→</span> <i class="d"></i> Drop</div>
+     <div class="btns"><div class="b dec">Decline</div><div class="b acc" id="acc">Accept</div></div>
+     <div class="stamp" id="stamp"></div>
+     <svg class="tap" id="tap" viewBox="0 0 46 56"><path d="M16 4 Q22 0 26 4 V24 L38 26 Q44 28 43 36 L40 50 Q38 55 32 55 H18 Q12 55 9 50 L3 38 Q1 33 6 32 L14 36 V6Z" fill="#C68657" stroke="#2B1D12" stroke-width="3" stroke-linejoin="round"/></svg>
+    </div>
+   </div>
+  </div>
+  <div class="side">
+   <div class="setbox">
+    <svg viewBox="0 0 100 100" width="58" height="58" aria-hidden="true"><use href="#logo"/></svg>
+    <div><span class="ta" style="font-size:17px">நீங்க வெச்ச தொகை</span><span class="en" style="font-size:14px">Your set amount</span></div>
+    <div class="amt" style="margin-left:auto">₹200</div>
+   </div>
+   <div class="rules">
+    <div><span class="ic" style="background:var(--g)">✓</span><span><span class="ta">₹200 அல்லது மேல → தானா Accept</span><span class="en">₹200 or more → Accept, automatically</span></span></div>
+    <div><span class="ic" style="background:var(--red)">✗</span><span><span class="ta">கம்மியா வந்தா → தொடாது</span><span class="en">Lower → left alone (or Decline, if you choose)</span></span></div>
+   </div>
+   <div class="loghead"><span class="ta i">சவாரி History</span><span class="sep"> · </span><span class="en i">Ride history</span></div>
+   <ul class="log" id="log" aria-live="polite"></ul>
+   <button class="replay" id="replay" type="button"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M6 4 L20 12 L6 20Z" fill="#2B1D12"/></svg><span class="ta i">மறுபடி பாருங்க</span><span class="sep"> · </span><span class="en i">Play again</span></button>
+  </div>
+ </div>
+</section>
+
+<!-- APPS -->
+<section class="wrap" id="apps">
+ <h2><span class="ta">எந்த app-ல வேலை செய்யும்?</span><span class="en">Which driver apps?</span></h2>
+ <div class="apps">
+  <div class="app live"><span class="nm">Rapido</span><span class="tag yes"><span class="ta">✓ வேலை செய்யுது</span><span class="en">✓ Works · tested live</span></span></div>
+  <div class="app"><span class="nm">Uber</span><span class="tag soon"><span class="ta">டெஸ்ட் நடக்குது</span><span class="en">Testing · coming</span></span></div>
+  <div class="app"><span class="nm">Ola</span><span class="tag soon"><span class="ta">டெஸ்ட் நடக்குது</span><span class="en">Testing · coming</span></span></div>
+  <div class="app"><span class="nm">Namma Yatri</span><span class="tag soon"><span class="ta">டெஸ்ட் நடக்குது</span><span class="en">Testing · coming</span></span></div>
+ </div>
+</section>
+
+<!-- FEATURES -->
+<section class="wrap" id="features">
+ <h2><span class="ta">உள்ள என்ன இருக்கு?</span><span class="en">What's inside</span></h2>
+ <div class="feats">
+  <div class="feat"><svg viewBox="0 0 56 56" aria-hidden="true"><rect x="16" y="4" width="24" height="48" rx="5" fill="#fff" stroke="#2B1D12" stroke-width="3.5"/><circle cx="28" cy="45" r="2.5" fill="#2B1D12"/><path d="M22 22 L27 27 L35 17" fill="none" stroke="#0B6B3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="ta">Phone-ல மட்டும் ஓடும்</span><span class="en">Runs only on your phone</span></div>
+  <div class="feat"><svg viewBox="0 0 56 56" aria-hidden="true"><rect x="4" y="10" width="48" height="36" rx="8" fill="#fff" stroke="#2B1D12" stroke-width="3.5"/><circle cx="20" cy="28" r="6" fill="none" stroke="#0B6B3A" stroke-width="3.5"/><path d="M33 28 H45 M39 22 V34" stroke="#0B6B3A" stroke-width="3.5" stroke-linecap="round"/></svg><span class="ta">Screen-ஐ பாத்து வேலை</span><span class="en">Reads the screen (Android Accessibility)</span></div>
+  <div class="feat"><svg viewBox="0 0 56 56" aria-hidden="true"><rect x="3" y="10" width="24" height="30" rx="6" fill="#F2C14E" stroke="#2B1D12" stroke-width="3"/><text x="15" y="32" text-anchor="middle" font-size="17" font-weight="800" fill="#2B1D12" font-family="sans-serif">அ</text><rect x="29" y="16" width="24" height="30" rx="6" fill="#fff" stroke="#2B1D12" stroke-width="3"/><text x="41" y="38" text-anchor="middle" font-size="18" font-weight="800" fill="#2B1D12" font-family="sans-serif">A</text></svg><span class="ta">தமிழ் &amp; English</span><span class="en">Tamil and English</span></div>
+  <div class="feat"><svg viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="31" r="20" fill="#fff" stroke="#2B1D12" stroke-width="3.5"/><path d="M28 19 V31 L36 36" fill="none" stroke="#0B6B3A" stroke-width="4" stroke-linecap="round"/><path d="M22 6 H34" stroke="#2B1D12" stroke-width="4" stroke-linecap="round"/></svg><span class="ta">Break டைமர்</span><span class="en">Break timer</span></div>
+  <div class="feat"><svg viewBox="0 0 56 56" aria-hidden="true"><rect x="4" y="6" width="22" height="20" rx="5" fill="#F2C14E" stroke="#2B1D12" stroke-width="3"/><rect x="30" y="6" width="22" height="20" rx="5" fill="#fff" stroke="#2B1D12" stroke-width="3"/><rect x="4" y="30" width="22" height="20" rx="5" fill="#fff" stroke="#2B1D12" stroke-width="3"/><rect x="30" y="30" width="22" height="20" rx="5" fill="#0B6B3A" stroke="#2B1D12" stroke-width="3"/><text x="15" y="21" text-anchor="middle" font-size="13" font-weight="800" fill="#2B1D12" font-family="sans-serif">₹</text><text x="41" y="45" text-anchor="middle" font-size="13" font-weight="800" fill="#fff" font-family="sans-serif">₹</text></svg><span class="ta">ஒவ்வொரு app-க்கும் தனி தொகை</span><span class="en">Separate amount per app</span></div>
+  <div class="feat"><svg viewBox="0 0 56 56" aria-hidden="true"><rect x="8" y="4" width="40" height="48" rx="6" fill="#fff" stroke="#2B1D12" stroke-width="3.5"/><path d="M16 16 h4 M26 16 h14 M16 28 h4 M26 28 h14 M16 40 h4 M26 40 h14" stroke="#2B1D12" stroke-width="3.5" stroke-linecap="round"/><path d="M16 16 h4 M16 28 h4" stroke="#0B6B3A" stroke-width="4"/></svg><span class="ta">சவாரி History</span><span class="en">Ride history</span></div>
+  <div class="feat"><svg viewBox="0 0 56 56" aria-hidden="true"><path d="M46 28 A18 18 0 1 1 40 15" fill="none" stroke="#2B1D12" stroke-width="4" stroke-linecap="round"/><path d="M34 8 L42 15 L34 21" fill="none" stroke="#2B1D12" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M28 20 V34 M22 29 L28 35 L34 29" fill="none" stroke="#0B6B3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="ta">App-லயே update</span><span class="en">Updates inside the app</span></div>
+  <div class="feat"><svg viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="22" fill="#fff" stroke="#2B1D12" stroke-width="3.5"/><path d="M18 28 H38 M30 20 L38 28 L30 36" fill="none" stroke="#C0432C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 14 L42 42" stroke="#2B1D12" stroke-width="3"/></svg><span class="ta">கம்மி fare-ஐ Decline பண்ணலாம்</span><span class="en">Optional: decline low fares</span></div>
+ </div>
+</section>
+
+<!-- INSTALL -->
+<section class="wrap" id="install">
+ <h2><span class="ta">எப்படி போடுறது? 7 ஸ்டெப்</span><span class="en">How to install: 7 steps</span></h2>
+ <ol class="steps">
+  <li class="step"><span class="num">1</span><svg viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="23" fill="#F2C14E" stroke="#2B1D12" stroke-width="3"/><path d="M26 12 V31 M17 23 L26 32 L35 23 M15 39 H37" fill="none" stroke="#2B1D12" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="tx"><span class="ta">APK டவுன்லோட் பண்ணுங்க</span><span class="en">Download the APK</span><a class="dlink" href="savari.apk" download="savari.apk"><span class="ta i">டவுன்லோட்</span><span class="sep"> · </span><span class="en i">Download</span></a></span></li>
+  <li class="step"><span class="num">2</span><svg viewBox="0 0 52 52" aria-hidden="true"><rect x="5" y="9" width="42" height="34" rx="7" fill="#fff" stroke="#2B1D12" stroke-width="3"/><rect x="25" y="20" width="16" height="10" rx="5" fill="#0B6B3A" stroke="#2B1D12" stroke-width="2"/><circle cx="36" cy="25" r="4" fill="#fff"/><path d="M11 22 H20 M11 28 H18" stroke="#2B1D12" stroke-width="3" stroke-linecap="round"/></svg><span class="tx"><span class="ta">"Install unknown apps" அனுமதி குடுங்க</span><span class="en">Allow "install unknown apps"</span></span></li>
+  <li class="step"><span class="num">3</span><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#logo"/></svg><span class="tx"><span class="ta">Savari-ஐ திறங்க</span><span class="en">Open Savari</span></span></li>
+  <li class="step"><span class="num">4</span><svg viewBox="0 0 56 56" aria-hidden="true"><rect x="3" y="10" width="24" height="30" rx="6" fill="#F2C14E" stroke="#2B1D12" stroke-width="3"/><text x="15" y="32" text-anchor="middle" font-size="17" font-weight="800" fill="#2B1D12" font-family="sans-serif">அ</text><rect x="29" y="16" width="24" height="30" rx="6" fill="#fff" stroke="#2B1D12" stroke-width="3"/><text x="41" y="38" text-anchor="middle" font-size="18" font-weight="800" fill="#2B1D12" font-family="sans-serif">A</text></svg><span class="tx"><span class="ta">மொழியை தேர்வு பண்ணுங்க</span><span class="en">Choose your language</span></span></li>
+  <li class="step"><span class="num">5</span><svg viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="23" fill="#fff" stroke="#2B1D12" stroke-width="3"/><circle cx="26" cy="14" r="4" fill="#0B6B3A"/><path d="M13 21 H39 M26 21 V31 M26 31 L19 42 M26 31 L33 42" fill="none" stroke="#0B6B3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="tx"><span class="ta">Accessibility-ல Savari-ஐ ON பண்ணுங்க</span><span class="en">Switch on Accessibility for Savari</span></span></li>
+  <li class="step"><span class="num">6</span><svg viewBox="0 0 52 52" aria-hidden="true"><rect x="3" y="12" width="46" height="28" rx="10" fill="#fff" stroke="#2B1D12" stroke-width="3"/><text x="26" y="33" text-anchor="middle" font-size="17" font-weight="800" fill="#0B6B3A" font-family="sans-serif">₹200</text></svg><span class="tx"><span class="ta">உங்க தொகையை வைங்க</span><span class="en">Set your amount</span></span></li>
+  <li class="step"><span class="num">7</span><svg viewBox="0 0 52 52" aria-hidden="true"><rect x="3" y="14" width="46" height="24" rx="12" fill="#0B6B3A" stroke="#2B1D12" stroke-width="3"/><circle cx="36" cy="26" r="9" fill="#fff" stroke="#2B1D12" stroke-width="2"/><text x="16" y="31" text-anchor="middle" font-size="12" font-weight="800" fill="#fff" font-family="sans-serif">ON</text></svg><span class="tx"><span class="ta">ON பண்ணுங்க. முடிஞ்சது!</span><span class="en">Turn it ON. Done!</span></span></li>
+ </ol>
+</section>
+
+<!-- RISKS -->
+<section class="wrap" id="risks">
+ <div class="warn">
+  <h2><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4 L46 42 H2Z" fill="#F2C14E" stroke="#2B1D12" stroke-width="3.5" stroke-linejoin="round"/><path d="M24 17 V29" stroke="#2B1D12" stroke-width="5" stroke-linecap="round"/><circle cx="24" cy="36" r="3" fill="#2B1D12"/></svg><span><span class="ta">கவனமா இருங்க</span><span class="en">Please be careful</span></span></h2>
+  <ul>
+   <li><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17" fill="#fff" stroke="#C0432C" stroke-width="4"/><path d="M8 32 L32 8" stroke="#C0432C" stroke-width="4"/></svg><span><span class="ta">Driver app-கள் auto-accept-ஐ ஒத்துக்காம இருக்கலாம். உங்க account block ஆகலாம்.</span><span class="en">Driver apps may not allow auto-accept. Your account could be blocked.</span></span></li>
+   <li><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="17" cy="17" r="11" fill="#fff" stroke="#2B1D12" stroke-width="4"/><path d="M25 25 L35 35" stroke="#2B1D12" stroke-width="5" stroke-linecap="round"/></svg><span><span class="ta">கிளம்பும் முன்னாடி fare, pickup ரெண்டையும் பாருங்க.</span><span class="en">Check the fare and pickup before you drive.</span></span></li>
+   <li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 L35 9 V19 Q35 31 20 37 Q5 31 5 19 V9Z" fill="#0B6B3A" stroke="#2B1D12" stroke-width="3"/><path d="M13 20 L18 25 L27 15" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><span class="ta">பாதுகாப்பா இருக்கும்போது மட்டும் யூஸ் பண்ணுங்க.</span><span class="en">Use it only when it is safe.</span></span></li>
+  </ul>
+ </div>
+</section>
+
+<section class="wrap final">
+ <svg viewBox="0 0 100 100" width="90" height="90" aria-hidden="true"><use href="#logo"/></svg>
+ <h2><span class="ta">ரெடியா? இப்பவே போடுங்க</span><span class="en">Ready? Get it now</span></h2>
+ <a class="dl" href="savari.apk" download="savari.apk">
+  <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#F2C14E" stroke="#2B1D12" stroke-width="3"/><path d="M24 11 V29 M15 21 L24 30 L33 21 M14 36 H34" fill="none" stroke="#2B1D12" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span><span class="ta">Savari டவுன்லோட்</span><span class="en">Download APK</span></span>
+ </a>
+</section>
+</main>
+
+<footer class="wrap">Savari · Android · தமிழ் / English</footer>
+
+<div class="ov" id="ov" role="dialog" aria-modal="true" aria-labelledby="ovt" hidden>
+ <div class="ovbox">
+  <button type="button" class="ovx" id="ovx" aria-label="மூடு / Close"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M5 5 L19 19 M19 5 L5 19" stroke="#2B1D12" stroke-width="3.5" stroke-linecap="round"/></svg></button>
+  <svg class="ovart" viewBox="0 0 340 170" aria-hidden="true">
+   <rect width="340" height="170" rx="15" fill="#FFE7C2"/>
+   <rect y="140" width="340" height="30" fill="#D9B98C"/>
+   <path class="road" d="M0 154 H340" stroke="#fff" stroke-width="4" stroke-dasharray="18 14"/>
+   <g class="ovphone">
+    <rect x="262" y="34" width="62" height="108" rx="10" fill="#2B1D12"/>
+    <rect x="268" y="44" width="50" height="86" rx="5" fill="#fff"/>
+    <use href="#logo" x="277" y="54" width="32" height="32"/>
+    <rect class="pbar" x="274" y="94" width="38" height="8" rx="4" fill="#E3F1E4"/>
+    <path class="pchk" d="M282 113 L290 120 L304 107" fill="none" stroke="#0B6B3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+   </g>
+   <g class="ovauto">
+    <use href="#auto" x="0" y="64" width="110" height="88"/>
+    <g class="parcel">
+     <rect x="30" y="34" width="46" height="34" rx="4" fill="#F2C14E" stroke="#2B1D12" stroke-width="3"/>
+     <path d="M30 46 H76 M53 34 V46" stroke="#2B1D12" stroke-width="2"/>
+     <text x="53" y="63" text-anchor="middle" font-size="12" font-weight="800" fill="#2B1D12" font-family="sans-serif">APK</text>
+    </g>
+   </g>
+  </svg>
+  <h2 id="ovt"><span class="ta">டவுன்லோட் ஆகுது…</span><span class="en">Downloading…</span></h2>
+  <p class="ovp"><span class="ta">மேல notification bar-ஐ பாருங்க.</span><span class="en">Check the top notification bar.</span></p>
+  <ol class="nx">
+   <li><span class="nn">1</span><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 3 H24 L33 12 V37 H8Z" fill="#fff" stroke="#2B1D12" stroke-width="3" stroke-linejoin="round"/><path d="M24 3 V12 H33" fill="none" stroke="#2B1D12" stroke-width="3"/><text x="20" y="30" text-anchor="middle" font-size="9" font-weight="800" fill="#0B6B3A" font-family="sans-serif">APK</text></svg><span><span class="ta">Download ஆன file-ஐ திறங்க</span><span class="en">Open the downloaded file</span></span></li>
+   <li><span class="nn">2</span><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="10" width="36" height="20" rx="10" fill="#0B6B3A" stroke="#2B1D12" stroke-width="3"/><circle cx="28" cy="20" r="7" fill="#fff"/></svg><span><span class="ta">"Install unknown apps" அனுமதி குடுங்க</span><span class="en">Allow "Install unknown apps"</span></span></li>
+   <li><span class="nn">3</span><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="3" y="10" width="34" height="20" rx="8" fill="#12884B" stroke="#2B1D12" stroke-width="3"/><path d="M12 20 L18 25 L28 15" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><span class="ta">Install அழுத்துங்க</span><span class="en">Tap Install</span></span></li>
+   <li><span class="nn">4</span><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#logo"/></svg><span><span class="ta">Savari-ஐ திறங்க</span><span class="en">Open Savari</span></span></li>
+  </ol>
+  <div class="ovact">
+   <a class="again" href="savari.apk" download="savari.apk" data-noov><span><span class="ta">மறுபடி டவுன்லோட்</span><span class="en">Download again</span></span></a>
+   <button type="button" class="ovclose" id="ovclose"><span><span class="ta">மூடு</span><span class="en">Close</span></span></button>
+  </div>
+ </div>
+</div>
+
+<div class="bar">
+ <a class="dl" href="savari.apk" download="savari.apk">
+  <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#F2C14E" stroke="#2B1D12" stroke-width="3"/><path d="M24 11 V29 M15 21 L24 30 L33 21 M14 36 H34" fill="none" stroke="#2B1D12" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span><span class="ta i">டவுன்லோட்</span><span class="sep"> · </span><span class="en i">Download APK</span></span>
+ </a>
+</div>
+
+<script>
+(function(){
+ var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+ // comic bubbles pop in when panel is seen
+ var panels = document.querySelectorAll('.panel');
+ if ('IntersectionObserver' in window && !reduce){
+  var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.4});
+  panels.forEach(function(p){io.observe(p)});
+ } else panels.forEach(function(p){p.classList.add('in')});
+
+ // demo
+ var SET = 200, $ = function(id){return document.getElementById(id)};
+ var card=$('card'), fareEl=$('fare'), badge=$('badge'), stamp=$('stamp'), acc=$('acc'), tap=$('tap'), statusEl=$('status'), log=$('log');
+ var run = 0, visible = true;
+ function sleep(ms,id){return new Promise(function(res,rej){setTimeout(function(){id===run?res():rej(0)},ms)})}
+ function status(ta,en){statusEl.innerHTML='<b class="ta">'+ta+'</b><span class="en">'+en+'</span>'}
+ function clear(){card.className='card';badge.className='badge';stamp.className='stamp';acc.classList.remove('pressed');tap.classList.remove('go')}
+ function addLog(f,ok){var li=document.createElement('li');li.className=ok?'ok':'no';li.innerHTML='<b>₹'+f+'</b><span>'+(ok?'<span class="ta">✓ Accept ஆச்சு</span><span class="en">✓ Accepted</span>':'<span class="ta">✗ விட்டாச்சு</span><span class="en">✗ Skipped</span>')+'</span>';log.appendChild(li)}
+ function judge(f){var ok=f>=SET;badge.innerHTML=ok?'₹'+f+' ≥ ₹'+SET+' ✓':'₹'+f+' &lt; ₹'+SET+' ✗';badge.classList.add('show',ok?'ok':'no');return ok}
+ function result(f,ok){
+  if(ok){acc.classList.add('pressed');stamp.innerHTML='<span class="ta">Accept ஆச்சு!</span><span class="en">Accepted</span>';stamp.classList.add('show','ok');status('தானா Accept ஆச்சு!','Accepted automatically!')}
+  else{card.classList.add('dim');stamp.innerHTML='<span class="ta">விட்டாச்சு</span><span class="en">Skipped</span>';stamp.classList.add('show','no');status('கம்மி fare. தொடல.','Low fare. Left alone.')}
+  addLog(f,ok);
+ }
+ async function offer(f,id){
+  clear(); status('சவாரிக்கு காத்திருக்கு…','Waiting for a ride…'); await sleep(1300,id);
+  fareEl.textContent='₹'+f; card.classList.add('show'); status('புது சவாரி வந்துச்சு!','New ride offer!'); await sleep(1100,id);
+  status('Savari செக் பண்ணுது…','Savari is checking…'); var ok=judge(f); await sleep(1400,id);
+  if(ok){tap.classList.add('go'); await sleep(reduce?0:550,id);}
+  result(f,ok); await sleep(2300,id);
+  card.classList.add('out'); badge.classList.remove('show'); await sleep(500,id);
+ }
+ async function play(once){
+  var id=++run;
+  try{
+   do{ log.innerHTML=''; await offer(250,id); await offer(120,id); await sleep(800,id);
+       while(!visible) await sleep(500,id);
+   }while(!once);
+   clear(); status('முடிஞ்சது. மறுபடி பாக்கலாம்.','Done. Tap Play again.');
+  }catch(e){}
+ }
+ function staticView(){
+  run++; clear(); log.innerHTML='';
+  fareEl.textContent='₹250'; card.classList.add('show'); judge(250); result(250,true); addLog(120,false);
+ }
+
+ // language toggle
+ var segBtns=document.querySelectorAll('.seg button');
+ function setLang(l,save){var h=document.documentElement;h.setAttribute('data-lang',l);h.lang=l==='en'?'en':'ta';
+  segBtns.forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-l')===l?'true':'false')});
+  if(save){try{localStorage.setItem('savari-lang',l)}catch(e){}}}
+ setLang(document.documentElement.getAttribute('data-lang')||'both',false);
+ segBtns.forEach(function(b){b.addEventListener('click',function(){setLang(b.getAttribute('data-l'),true)})});
+
+ // download overlay (browser download proceeds normally, no preventDefault)
+ var ov=$('ov'),lastFocus=null;
+ function openOv(){if(!ov.hidden)return;lastFocus=document.activeElement;ov.hidden=false;document.body.style.overflow='hidden';setTimeout(function(){$('ovx').focus()},50)}
+ function closeOv(){ov.hidden=true;document.body.style.overflow='';if(lastFocus&&lastFocus.focus)lastFocus.focus()}
+ document.querySelectorAll('a[download]').forEach(function(a){if(!a.hasAttribute('data-noov'))a.addEventListener('click',openOv)});
+ $('ovx').addEventListener('click',closeOv);$('ovclose').addEventListener('click',closeOv);
+ ov.addEventListener('click',function(e){if(e.target===ov)closeOv()});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!ov.hidden)closeOv()});
+ $('replay').addEventListener('click',function(){play(reduce)});
+ if('IntersectionObserver' in window){new IntersectionObserver(function(es){visible=es[0].isIntersecting},{threshold:0}).observe($('demo'))}
+ if(reduce) staticView(); else play(false);
+})();
+</script>
+</body>
+</html>
