@@ -230,6 +230,13 @@ header.wrap{padding-top:var(--s4)}
 @media(min-width:820px){.pp{grid-template-columns:minmax(0,290px) minmax(0,1fr);gap:var(--s7)}}
 .ppart{display:block;width:100%;max-width:290px;height:auto;margin:0 auto;border:4px solid var(--ink);border-radius:22px;box-shadow:6px 6px 0 var(--ink)}
 .calm{display:flex;gap:var(--s3);align-items:center;margin-top:var(--s5);background:#E3F1E4;border:3px solid var(--g);border-radius:18px;padding:var(--s4);font-size:17px;line-height:1.25}
+.clips{display:grid;gap:var(--s5);grid-template-columns:minmax(0,1fr);justify-items:center}
+@media(min-width:620px){.clips{grid-template-columns:1fr 1fr}}
+.clip{margin:0;display:flex;flex-direction:column;align-items:center;width:100%}
+.vframe{width:100%;max-width:250px;aspect-ratio:480/1068;background:#000;border:5px solid var(--ink);border-radius:30px;box-shadow:6px 6px 0 var(--ink);overflow:hidden}
+.vframe video{width:100%;height:100%;object-fit:cover;display:block;background:#000}
+.clip figcaption{margin-top:var(--s3);text-align:center;font-weight:800;font-size:20px;line-height:1.2}
+.clip figcaption .en{display:block;font-size:.66em;font-weight:700;color:#7a6a52;margin-top:4px}
 .calm>span{min-width:0}
 .calm svg{flex:none;width:46px;height:46px}
 .calm .en{font-size:14px}
@@ -712,6 +719,21 @@ html[data-lang=en] .chip .t .en,html[data-lang=en] .rules .en,html[data-lang=en]
   <li class="step"><span class="num">6</span><svg viewBox="0 0 52 52" aria-hidden="true"><rect x="3" y="12" width="46" height="28" rx="10" fill="#fff" stroke="#2B1D12" stroke-width="3"/><text x="26" y="33" text-anchor="middle" font-size="17" font-weight="800" fill="#0B6B3A" font-family="sans-serif">₹200</text></svg><span class="tx"><span class="ta">உங்க தொகையை வைங்க</span><span class="en">Set your amount</span></span></li>
   <li class="step"><span class="num">7</span><svg viewBox="0 0 52 52" aria-hidden="true"><rect x="3" y="14" width="46" height="24" rx="12" fill="#0B6B3A" stroke="#2B1D12" stroke-width="3"/><circle cx="36" cy="26" r="9" fill="#fff" stroke="#2B1D12" stroke-width="2"/><text x="16" y="31" text-anchor="middle" font-size="12" font-weight="800" fill="#fff" font-family="sans-serif">ON</text></svg><span class="tx"><span class="ta">ON பண்ணுங்க. முடிஞ்சது!</span><span class="en">Turn it ON. Done!</span></span></li>
  </ol>
+</section>
+
+<!-- WATCH: how-to video clips -->
+<section class="wrap" id="watch">
+ <h2><span class="ta">பார்த்தே செய்யுங்க</span><span class="en">Watch how</span></h2>
+ <div class="clips">
+  <figure class="clip">
+   <div class="vframe"><video src="howto-download.mp4" controls preload="none" playsinline poster=""></video></div>
+   <figcaption><span class="ta">எப்படி டவுன்லோட் பண்ணுறது</span><span class="en">How to download</span></figcaption>
+  </figure>
+  <figure class="clip">
+   <div class="vframe"><video src="howto-allow.mp4" controls preload="none" playsinline poster=""></video></div>
+   <figcaption><span class="ta">எப்படி அனுமதி குடுக்கிறது</span><span class="en">How to allow access</span></figcaption>
+  </figure>
+ </div>
 </section>
 
 <!-- PLAY PROTECT "APP BLOCKED" HELP -->
