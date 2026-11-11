@@ -4,6 +4,11 @@
       { "key": "Content-Type", "value": "application/vnd.android.package-archive" },
       { "key": "Content-Disposition", "value": "attachment; filename=\"savari.apk\"" },
       { "key": "Cache-Control", "value": "public, max-age=300" }
+    ] },
+    { "source": "/shizuku.apk", "headers": [
+      { "key": "Content-Type", "value": "application/vnd.android.package-archive" },
+      { "key": "Content-Disposition", "value": "attachment; filename=\"shizuku.apk\"" },
+      { "key": "Cache-Control", "value": "public, max-age=3600" }
     ] }
   ]
 }
