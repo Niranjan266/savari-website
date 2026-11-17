@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://niranjan266.github.io/savari-website/sitemap.xml
+Sitemap: https://savari-chi.vercel.app/sitemap.xml
